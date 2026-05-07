@@ -12,6 +12,9 @@ import MisPostulaciones from './pages/MisPostulaciones';
 import PanelEmpresa from './pages/PanelEmpresa';
 import PanelAdmin from './pages/PanelAdmin';
 
+// Components
+import Navbar from './components/Navbar';
+
 // Styles
 import './styles/global.css';
 
@@ -27,6 +30,7 @@ function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
+        <Navbar />
         <Routes>
           {/* Públicas */}
           <Route path="/login" element={<Login />} />
