@@ -1,0 +1,72 @@
+/* === Reset y base === */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; color: #1a1a1a; background: #fafafa; line-height: 1.6; }
+a { color: #1a1a1a; text-decoration: none; }
+
+/* === Layout === */
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.page { padding: 24px 0; }
+.loading { display: flex; justify-content: center; padding: 60px; color: #888; }
+
+/* === Navbar === */
+.navbar { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; background: #fff; border-bottom: 1px solid #e8e8e8; }
+.navbar-brand { font-weight: 600; font-size: 16px; }
+.navbar-links { display: flex; align-items: center; gap: 16px; font-size: 14px; }
+.navbar-links a { color: #555; }
+.navbar-links a:hover { color: #000; }
+
+/* === Botones === */
+.btn { display: inline-block; padding: 8px 18px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; cursor: pointer; background: #fff; transition: all 0.15s; }
+.btn:hover { background: #f0f0f0; }
+.btn-primary { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+.btn-primary:hover { background: #333; }
+.btn-danger { background: #dc3545; color: #fff; border-color: #dc3545; }
+.btn-success { background: #198754; color: #fff; border-color: #198754; }
+.btn-sm { padding: 4px 12px; font-size: 12px; }
+
+/* === Formularios === */
+.form-group { margin-bottom: 16px; }
+.form-group label { display: block; margin-bottom: 4px; font-size: 14px; font-weight: 500; }
+.form-input { width: 100%; padding: 10px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; }
+.form-input:focus { outline: none; border-color: #888; }
+.form-select { width: 100%; padding: 10px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; background: #fff; }
+
+/* === Cards === */
+.card { background: #fff; border: 1px solid #e8e8e8; border-radius: 10px; padding: 18px; margin-bottom: 12px; }
+.card-title { font-size: 16px; font-weight: 500; margin-bottom: 4px; }
+.card-subtitle { font-size: 13px; color: #888; }
+.card-body { font-size: 14px; color: #555; margin: 10px 0; }
+.card-footer { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #aaa; }
+
+/* === Stats === */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.stat-card { background: #fff; border: 1px solid #e8e8e8; border-radius: 8px; padding: 14px; }
+.stat-label { font-size: 12px; color: #888; margin-bottom: 4px; }
+.stat-value { font-size: 24px; font-weight: 500; }
+
+/* === Tabla === */
+.table-wrapper { border: 1px solid #e8e8e8; border-radius: 8px; overflow: hidden; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; padding: 10px 14px; font-weight: 500; color: #888; background: #f8f8f8; }
+td { padding: 10px 14px; border-top: 1px solid #eee; }
+
+/* === Badges === */
+.badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 12px; }
+.badge-active { background: #d4edda; color: #155724; }
+.badge-pending { background: #fff3cd; color: #856404; }
+.badge-rejected { background: #f8d7da; color: #721c24; }
+.badge-info { background: #e8e8e8; color: #555; }
+
+/* === Filtros === */
+.filters { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+.search-bar { display: flex; gap: 10px; margin-bottom: 16px; }
+.search-bar input { flex: 1; }
+
+/* === Grid === */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+
+/* === Mensajes === */
+.alert { padding: 12px 16px; border-radius: 6px; margin-bottom: 16px; font-size: 14px; }
+.alert-error { background: #f8d7da; color: #721c24; }
+.alert-success { background: #d4edda; color: #155724; }

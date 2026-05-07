@@ -1,0 +1,12 @@
+{
+  "name": "bolsa-empleo-universitaria",
+  "version": "1.0.0",
+  "description": "Plataforma de bolsa de empleo universitaria - Caso 2",
+  "private": true,
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  }
+}
