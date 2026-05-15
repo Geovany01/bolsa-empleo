@@ -272,7 +272,7 @@ node -e "require('bcryptjs').hash('TU_PASSWORD', 10).then(console.log)"
 
 | Integrante | Rol 1 | Rol 2 |
 |---|---|---|
-| A | Project Manager | QA / Tester |
-| B | Backend Developer | DBA |
-| C | Frontend Developer | DevOps |
-| D | UX/UI Designer | Documentador Técnico |
+| Óscar Geovany Pérez Vásquez | Project Manager | QA / Tester |
+| Boris Wladimir Menéndez Sandoval | Backend Developer | DBA |
+|  Miguel Alejandro Romero Marroquín  | Frontend Developer | DevOps |
+| Rocío Shalim de los Ángeles Tobías Chalí  | UX/UI Designer | Documentador Técnico |
